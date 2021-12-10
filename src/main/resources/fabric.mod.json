@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "carpetshadow",
+  "version": "${version}",
+
+  "name": "Carpet Shadow",
+  "description": "Makes \"/player @s shadow\" accessible to non-ops as \"/shadow\"",
+  "authors": [
+    "BadGraphixD"
+  ],
+  "contact": {
+    "homepage": "https://github.com/BadGraphixD",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/carpetshadow/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "bg.carpet.shadow.CarpetShadow"
+    ]
+  },
+  "mixins": [
+    "carpetshadow.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
