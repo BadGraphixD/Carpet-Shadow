@@ -1,9 +1,7 @@
-# Fabric Example Mod
+# Carpet Shadow Mod
 
-## Setup
+This mod allows minecraft players with the lowest permission level to shadow their own player, which is a feature from gnembon's [carpet mod](https://github.com/gnembon/fabric-carpet). To put it simply, this removes the need of running a minecraft client to have a player entity on the server. On a multiplayer server this comes in handy, when players want to afk at a certain location over a longer period of time.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## How it works
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+The carpet command `/player <name> shadow` shadows the player, and removes the need of an active client. But it's permission level is too high for non-ops. Therefore this mod implements the command `/shadow`, which just executes `/player @s shadow`. This way the command cannot be abused to shadow other players for example.
